@@ -6,6 +6,7 @@ import os
 
 import matplotlib.pyplot as plt
 import torch
+import networkx as nx
 
 from datasets.loading import load_data
 from model.hyphc import HypHC
@@ -36,7 +37,31 @@ if __name__ == "__main__":
     tree = model.decode_tree(fast_decoding=True)
     leaves_embeddings = model.normalize_embeddings(model.embeddings.weight.data)
     leaves_embeddings = project(leaves_embeddings).detach().cpu().numpy()
-    fig = plt.figure(figsize=(5, 5))
-    ax = fig.add_subplot(111)
-    ax = plot_tree_from_leaves(ax, tree, leaves_embeddings, labels=y_true)
+
+    # Create a more readable layout
+    pos = nx.kamada_kawai_layout(tree)  # or nx.spring_layout(tree, k=0.5)
+
+    # Use different colors for internal nodes vs. tokens
+    node_colors = ['skyblue' if 'Internal' in str(tree.nodes[node]['label']) else 'orange' for node in tree.nodes()]
+
+    # Adjust node sizes
+    node_sizes = [300 if 'Internal' in str(tree.nodes[node]['label']) else 500 for node in tree.nodes()]
+
+    # Draw with improved settings
+    plt.figure(figsize=(15, 15))
+    nx.draw_networkx_nodes(tree, pos, node_size=node_sizes, node_color=node_colors, alpha=0.8)
+    nx.draw_networkx_edges(tree, pos, width=0.5, alpha=0.5)
+
+    # Only show labels for actual tokens, not internal nodes
+    token_labels = {node: label for node, label in tree.nodes(data='label') if not 'Internal' in str(label)}
+    nx.draw_networkx_labels(tree, pos, labels=token_labels, font_size=10)
+
+    plt.axis('off')
+    plt.tight_layout()
+
     fig.savefig(os.path.join(args.model_dir, f"embeddings_{args.seed}.png"))
+
+    # Extract the subgraph containing "User" tokens
+    user_nodes = [node for node, label in token_labels.items() if 'User' in str(label)]
+    user_subgraph = nx.subgraph(tree, user_nodes)
+    # Visualize just this subgraph

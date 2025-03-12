@@ -61,7 +61,8 @@ def train(args):
 
     # create model
     model = HypHC(dataset.n_nodes, args.rank, args.temperature, args.init_size, args.max_scale)
-    model.to("cuda")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model.to(device)
 
     # create optimizer
     Optimizer = getattr(optim, args.optimizer)
@@ -77,8 +78,8 @@ def train(args):
         total_loss = 0.0
         with tqdm(total=len(dataloader), unit='ex') as bar:
             for step, (triple_ids, triple_similarities) in enumerate(dataloader):
-                triple_ids = triple_ids.cuda()
-                triple_similarities = triple_similarities.cuda()
+                triple_ids = triple_ids.to(device)
+                triple_similarities = triple_similarities.to(device)
                 loss = model.loss(triple_ids, triple_similarities)
                 optimizer.zero_grad()
                 loss.backward()
