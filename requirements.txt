@@ -3,3 +3,4 @@ networkx==2.2
 numpy==1.19.2
 torch==1.6.0
 tqdm==4.31.1
+scikit-learn

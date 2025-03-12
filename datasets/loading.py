@@ -10,6 +10,21 @@ UCI_DATASETS = [
     "iris",
 ]
 
+def load_codebert_data(points_file, vocab_file):
+    """Load CodeBERT activations data."""
+    # Load points and vocabulary
+    points = np.load(points_file)
+    vocab = np.load(vocab_file, allow_pickle=True)
+    
+    # Calculate similarities using cosine similarity
+    from sklearn.metrics.pairwise import cosine_similarity
+    similarities = cosine_similarity(points) # hyPHC needs a similarity matrix
+    
+        
+    # Convert to double precision
+    similarities = similarities.astype(np.float64)
+    
+    return points, vocab, similarities
 
 def load_data(dataset, normalize=True):
     """Load dataset.
@@ -21,7 +36,11 @@ def load_data(dataset, normalize=True):
     @return: feature vectors, labels, and pairwise similarities computed with cosine similarity
     @rtype: Tuple[np.array, np.array, np.array]
     """
-    if dataset in UCI_DATASETS:
+    if dataset == "codebert":
+        points_file = "data/processed_activations/_processed_points.npy"
+        vocab_file = "data/processed_activations/_processed_vocab.npy"
+        return load_codebert_data(points_file, vocab_file) # cosine similarity matrix done in the load_codebert_data function
+    elif dataset in UCI_DATASETS:
         x, y = load_uci_data(dataset)
     else:
         raise NotImplementedError("Unknown dataset {}.".format(dataset))
