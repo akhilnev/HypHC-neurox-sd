@@ -1,0 +1,86 @@
+2025-02-25 21:56:03,985 INFO Using seed 0.
+2025-02-25 21:56:03,986 INFO Using double precision.
+2025-02-25 21:59:14,664 INFO Using seed 0.
+2025-02-25 21:59:14,665 INFO Using double precision.
+2025-02-25 21:59:14,667 INFO Generating triples.
+2025-02-25 21:59:14,672 INFO Total of 100000 triples
+2025-02-25 22:00:58,966 INFO Using seed 0.
+2025-02-25 22:00:58,967 INFO Using double precision.
+2025-02-25 22:00:58,969 INFO Generating triples.
+2025-02-25 22:00:58,972 INFO Total of 100000 triples
+2025-02-25 22:00:59,544 INFO Start training
+2025-02-25 22:03:18,217 INFO Using seed 0.
+2025-02-25 22:03:18,218 INFO Using double precision.
+2025-02-25 22:03:18,219 INFO Generating triples.
+2025-02-25 22:03:18,222 INFO Total of 100000 triples
+2025-02-25 22:03:18,877 INFO Start training
+2025-02-25 22:04:07,113 INFO 	 Epoch 0 | average train loss: 0.890947
+2025-02-25 22:04:07,129 INFO Dasgupta's cost:	282519.5482
+2025-02-25 22:05:00,212 INFO 	 Epoch 1 | average train loss: 0.829831
+2025-02-25 22:05:00,237 INFO Dasgupta's cost:	282188.6548
+2025-02-25 22:05:52,342 INFO 	 Epoch 2 | average train loss: 0.824095
+2025-02-25 22:05:52,348 INFO Dasgupta's cost:	281835.5726
+2025-02-25 22:06:40,566 INFO 	 Epoch 3 | average train loss: 0.821179
+2025-02-25 22:06:40,574 INFO Dasgupta's cost:	281447.4043
+2025-02-25 22:07:28,948 INFO 	 Epoch 4 | average train loss: 0.818995
+2025-02-25 22:07:28,954 INFO Dasgupta's cost:	281339.5529
+2025-02-25 22:08:17,433 INFO 	 Epoch 5 | average train loss: 0.817187
+2025-02-25 22:08:17,454 INFO Dasgupta's cost:	281324.6260
+2025-02-25 22:09:05,930 INFO 	 Epoch 6 | average train loss: 0.815569
+2025-02-25 22:09:05,939 INFO Dasgupta's cost:	280949.0570
+2025-02-25 22:09:54,498 INFO 	 Epoch 7 | average train loss: 0.814461
+2025-02-25 22:09:54,521 INFO Dasgupta's cost:	280904.5311
+2025-02-25 22:10:43,512 INFO 	 Epoch 8 | average train loss: 0.813759
+2025-02-25 22:10:43,520 INFO Dasgupta's cost:	280898.1448
+2025-02-25 22:11:32,365 INFO 	 Epoch 9 | average train loss: 0.813252
+2025-02-25 22:11:32,370 INFO Dasgupta's cost:	280980.7683
+2025-02-25 22:12:21,348 INFO 	 Epoch 10 | average train loss: 0.812873
+2025-02-25 22:12:21,353 INFO Dasgupta's cost:	280885.2273
+2025-02-25 22:13:10,629 INFO 	 Epoch 11 | average train loss: 0.812572
+2025-02-25 22:13:10,653 INFO Dasgupta's cost:	280901.3636
+2025-02-25 22:14:01,444 INFO 	 Epoch 12 | average train loss: 0.812224
+2025-02-25 22:14:01,452 INFO Dasgupta's cost:	280835.2118
+2025-02-25 22:14:53,159 INFO 	 Epoch 13 | average train loss: 0.811993
+2025-02-25 22:14:53,166 INFO Dasgupta's cost:	280666.7557
+2025-02-25 22:15:43,940 INFO 	 Epoch 14 | average train loss: 0.811791
+2025-02-25 22:15:43,945 INFO Dasgupta's cost:	280871.0616
+2025-02-25 22:16:32,929 INFO 	 Epoch 15 | average train loss: 0.811605
+2025-02-25 22:16:32,934 INFO Dasgupta's cost:	280598.5585
+2025-02-25 22:17:21,922 INFO 	 Epoch 16 | average train loss: 0.811453
+2025-02-25 22:17:21,928 INFO Dasgupta's cost:	280617.4677
+2025-02-25 22:18:10,412 INFO 	 Epoch 17 | average train loss: 0.811315
+2025-02-25 22:18:10,418 INFO Dasgupta's cost:	280656.4003
+2025-02-25 22:18:59,503 INFO 	 Epoch 18 | average train loss: 0.811219
+2025-02-25 22:18:59,510 INFO Dasgupta's cost:	280728.1704
+2025-02-25 22:19:47,943 INFO 	 Epoch 19 | average train loss: 0.811087
+2025-02-25 22:19:47,948 INFO Dasgupta's cost:	280531.9175
+2025-02-25 22:20:36,503 INFO 	 Epoch 20 | average train loss: 0.811015
+2025-02-25 22:20:36,508 INFO Dasgupta's cost:	280554.0668
+2025-02-25 22:21:25,339 INFO 	 Epoch 21 | average train loss: 0.810930
+2025-02-25 22:21:25,348 INFO Dasgupta's cost:	280584.5912
+2025-02-25 22:22:14,792 INFO 	 Epoch 22 | average train loss: 0.810945
+2025-02-25 22:22:14,804 INFO Dasgupta's cost:	280715.4068
+2025-02-25 22:23:03,752 INFO 	 Epoch 23 | average train loss: 0.810887
+2025-02-25 22:23:03,772 INFO Dasgupta's cost:	280531.2322
+2025-02-25 22:23:53,277 INFO 	 Epoch 24 | average train loss: 0.810871
+2025-02-25 22:23:53,288 INFO Dasgupta's cost:	280612.0444
+2025-02-25 22:24:42,824 INFO 	 Epoch 25 | average train loss: 0.810865
+2025-02-25 22:24:42,832 INFO Dasgupta's cost:	280652.9892
+2025-02-25 22:25:31,001 INFO 	 Epoch 26 | average train loss: 0.810876
+2025-02-25 22:25:31,008 INFO Dasgupta's cost:	280579.8230
+2025-02-25 22:26:20,836 INFO 	 Epoch 27 | average train loss: 0.810859
+2025-02-25 22:26:20,842 INFO Dasgupta's cost:	280609.1348
+2025-02-25 22:27:09,501 INFO 	 Epoch 28 | average train loss: 0.810797
+2025-02-25 22:27:09,506 INFO Dasgupta's cost:	280679.9054
+2025-02-25 22:27:58,027 INFO 	 Epoch 29 | average train loss: 0.810972
+2025-02-25 22:27:58,034 INFO Dasgupta's cost:	280747.5377
+2025-02-25 22:28:46,824 INFO 	 Epoch 30 | average train loss: 0.810820
+2025-02-25 22:28:46,829 INFO Dasgupta's cost:	280553.1839
+2025-02-25 22:29:34,999 INFO 	 Epoch 31 | average train loss: 0.810871
+2025-02-25 22:29:35,004 INFO Dasgupta's cost:	280607.2060
+2025-02-25 22:30:23,429 INFO 	 Epoch 32 | average train loss: 0.810883
+2025-02-25 22:30:23,435 INFO Dasgupta's cost:	280543.8298
+2025-02-25 22:31:11,522 INFO 	 Epoch 33 | average train loss: 0.810804
+2025-02-25 22:31:11,529 INFO Dasgupta's cost:	280618.1757
+2025-02-25 22:32:00,186 INFO 	 Epoch 34 | average train loss: 0.810857
+2025-02-25 22:32:00,192 INFO Dasgupta's cost:	280628.3163
