@@ -16,12 +16,29 @@ def load_codebert_data(points_file, vocab_file):
     points = np.load(points_file)
     vocab = np.load(vocab_file, allow_pickle=True)
     
-    # Calculate similarities using cosine similarity
+    # Calculate similarities using batched cosine similarity to save memory
     from sklearn.metrics.pairwise import cosine_similarity
-    similarities = cosine_similarity(points) # hyPHC needs a similarity matrix
     
+    # Try to use a smaller subset for initial testing
+    if points.shape[0] > 20000:
+        print(f"WARNING: Large dataset with {points.shape[0]} points detected.")
+        print("Computing similarities in batches to save memory...")
         
-    # Convert to double precision
+        # Compute in batches
+        BATCH_SIZE = 1000
+        n_samples = points.shape[0]
+        similarities = np.zeros((n_samples, n_samples), dtype=np.float32)  # Use float32 initially
+        
+        for i in range(0, n_samples, BATCH_SIZE):
+            end_i = min(i + BATCH_SIZE, n_samples)
+            batch = points[i:end_i]
+            print(f"Computing similarities for batch {i}-{end_i}/{n_samples}")
+            batch_similarities = cosine_similarity(batch, points)
+            similarities[i:end_i] = batch_similarities
+    else:
+        similarities = cosine_similarity(points)
+    
+    # Convert to double precision only at the end
     similarities = similarities.astype(np.float64)
     
     return points, vocab, similarities

@@ -57,7 +57,13 @@ def train(args):
     # create dataset
     x, y_true, similarities = load_data(args.dataset)
     dataset = HCDataset(x, y_true, similarities, num_samples=args.num_samples)
-    dataloader = data.DataLoader(dataset, batch_size=args.batch_size, shuffle=True, num_workers=8, pin_memory=True)
+    dataloader = data.DataLoader(
+        dataset, 
+        batch_size=args.batch_size, 
+        shuffle=True, 
+        num_workers=2,  # Reduced from 8
+        pin_memory=False  # Disabled pin memory to save GPU memory
+    )
 
     # create model
     model = HypHC(dataset.n_nodes, args.rank, args.temperature, args.init_size, args.max_scale)
