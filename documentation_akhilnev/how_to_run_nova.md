@@ -234,3 +234,96 @@ Note: For the first ~7 minutes on A100, it may appear that the code is hanging, 
 
 4. **For Additional Help**:
    Contact ResearchIT at researchit@iastate.edu or your advisor.
+
+## 9. Disconnecting and Reconnecting
+
+### Disconnecting from Nova
+
+When you need to leave your work and disconnect from Nova, you can do so safely with these steps:
+
+1. **If in an Interactive Session**:
+   ```bash
+   # Exit from the interactive compute node
+   exit
+   ```
+
+2. **Exit from Nova Login Node**:
+   ```bash
+   # Exit from Nova
+   exit
+   ```
+
+Your batch jobs will continue to run in the background even after you log out.
+
+### Reconnecting to Nova and Resuming Work
+
+When you're ready to continue your work, follow these steps to get back to where you left off:
+
+1. **Login to Nova**:
+   ```bash
+   ssh <your-netid>@nova.its.iastate.edu
+   ```
+   * Enter your password and verification code when prompted
+
+2. **Navigate to Your Working Directory**:
+   ```bash
+   cd /work/classtmp/akhilnev/HypHC
+   ```
+
+3. **Check Job Status**:
+   ```bash
+   # Check the status of any running jobs
+   squeue -u akhilnev
+   
+   # Check details of completed jobs
+   sacct -u akhilnev --format=JobID,JobName,State,ExitCode,Start,End,Elapsed
+   ```
+
+4. **View Job Output**:
+   ```bash
+   # View output from your job (replace with your job ID)
+   cat logs/slurm-JOBID.out
+   ```
+
+5. **Reactivate Your Environment**:
+   ```bash
+   # Initialize conda
+   source /work/classtmp/akhilnev/miniconda3/bin/activate
+   
+   # Activate your HypHC environment
+   conda activate hyphc_env
+   
+   # Set environment variables
+   export HHC_HOME=$(pwd)
+   export DATAPATH="$HHC_HOME/data"
+   export SAVEPATH="$HHC_HOME/embeddings"
+   ```
+
+6. **Continue Your Work**:
+   * Submit new jobs if needed
+   * Analyze results from completed jobs
+   * Make adjustments based on previous job outcomes
+
+### Checking for Results
+
+If your job has completed while you were away:
+
+1. **Check for Generated Model Files**:
+   ```bash
+   ls -la embeddings/codebert/
+   ```
+
+2. **Analyze the Results**:
+   ```bash
+   # Find the most recent output directory
+   MODEL_DIR=$(ls -t embeddings/codebert/ | head -1)
+   
+   # Extract clusters
+   python extract_subclusters.py --model_dir embeddings/codebert/$MODEL_DIR --seed 0 --min_size 2
+   ```
+
+3. **Transfer Results to Local Machine** (if needed):
+   ```bash
+   # From your local machine
+   scp -r akhilnev@novadtn.its.iastate.edu:/work/classtmp/akhilnev/HypHC/embeddings/codebert/$MODEL_DIR /path/on/local/machine/
+   ```
