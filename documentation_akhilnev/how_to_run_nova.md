@@ -326,4 +326,73 @@ If your job has completed while you were away:
    ```bash
    # From your local machine
    scp -r akhilnev@novadtn.its.iastate.edu:/work/classtmp/akhilnev/HypHC/embeddings/codebert/$MODEL_DIR /path/on/local/machine/
+
+## 10. Challenges Encountered
+
+After successfully running the model, we encountered several challenges during the analysis phase:
+
+### Memory Issues with Visualization
+
+When attempting to analyze the HypHC results locally (on a MacBook), we experienced severe memory limitations:
+
+- Running `visualize.py` with a dataset of 47,321 tokens crashed due to memory exhaustion
+- The script began calculating similarities between points but was killed by the operating system
+- Similarity calculation appeared to be processing in batches (1000 tokens at a time) but still exhausted memory
+
+We attempted to create a memory-optimized script (`extract_clusters_to_file.py`) that:
+- Used garbage collection
+- Processed branches individually
+- Limited token display
+- Wrote directly to file
+
+However, even this optimized approach crashed during the tree decoding phase before it could complete.
+
+### Long Processing Times on Nova
+
+When running analysis scripts on Nova:
+
+- The `extract_clusters_to_file.py` script began executing but took over 30 minutes without completing
+- The most time-consuming step was "Decoding tree" which transforms embeddings into a hierarchical structure
+- The process appeared to stall with no progress indicators during tree decoding
+
+Our SSH connection to Nova disconnected during the long-running process, terminating the extraction job before completion.
+
+### SSH Connection Stability
+
+Issues with maintaining connection to Nova:
+
+- Interactive sessions were terminated when SSH connections dropped
+- Long-running processes (30+ minutes) were vulnerable to connection interruptions
+- Laggy terminal response made monitoring progress difficult
+
+### Alternative Analysis Approach
+
+We created a lightweight analysis script that:
+- Sampled 3,000 tokens instead of using all 47,321
+- Analyzed token neighborhoods based on embedding similarity
+- Avoided the memory-intensive tree decoding step
+- Generated statistics about the embedding space
+
+This approach completed successfully but provided limited insight without the full hierarchical clustering structure.
+
+### Unexpected Embedding Properties
+
+The embedding analysis revealed:
+- All tokens appeared to have identical norms (0.6812)
+- This suggests tokens are positioned equidistant from the origin in hyperbolic space
+- This is unusual for hyperbolic embeddings, which typically show varying distances from the origin
+
+### Batch Job Limitations
+
+Attempts to use SLURM batch jobs faced challenges:
+- Initial quality of service (QoS) configuration was rejected
+- Required identifying available QoS options (instruction and scavenger) through `sacctmgr`
+- Needed to adapt script parameters to match available resources
+
+### X11 Requirements
+
+When attempting visualization:
+- Scripts required X11 forwarding capabilities
+- Headless plotting mode was needed but not initially configured
+- Additional dependencies like matplotlib and pillow were required
    ```
