@@ -1,0 +1,871 @@
+Analysis of model embeddings/codebert/6f67bf8855d5caf427db3b5aed2c9e5a650bd6ed756bccfac0305bd46df78ffe, seed 0
+
+== Model Configuration ==
+seed: 0
+epochs: 50
+batch_size: 64
+learning_rate: 0.001
+eval_every: 1
+patience: 30
+optimizer: RAdam
+save: 1
+fast_decoding: 1
+num_samples: 50000
+dtype: double
+rank: 2
+temperature: 0.1
+init_size: 0.05
+anneal_every: 50
+anneal_factor: 0.5
+max_scale: 0.999
+dataset: codebert
+
+== Sample Token Neighborhoods ==
+
+Token: asyncRemote|||3|||3109|||0
+Closest neighbors:
+  Field|||132|||3228|||4 (distance: 0.0002)
+  )|||5998|||4921|||14 (distance: 0.0005)
+  assoJobsArr|||1|||2082|||1 (distance: 0.0017)
+  )|||2690|||2241|||4 (distance: 0.0020)
+  getRequestURI|||2|||4672|||4 (distance: 0.0024)
+
+Token: (|||2723|||2362|||3
+Closest neighbors:
+  managedMethod|||24|||4966|||8 (distance: 0.0017)
+  return|||260|||4032|||0 (distance: 0.0025)
+  .|||1190|||1173|||3 (distance: 0.0031)
+  )|||5381|||4455|||12 (distance: 0.0034)
+  idAsString|||2|||531|||3 (distance: 0.0039)
+
+Token: if|||418|||2156|||0
+Closest neighbors:
+  (|||4727|||4043|||6 (distance: 0.0010)
+  resultSetParam|||15|||1895|||0 (distance: 0.0024)
+  (|||5196|||4411|||8 (distance: 0.0038)
+  while|||4|||1839|||0 (distance: 0.0042)
+  isClosed|||1|||3040|||6 (distance: 0.0055)
+
+Token: (|||2515|||2172|||6
+Closest neighbors:
+  JSON_PARSING|||2|||105|||6 (distance: 0.0000)
+  public|||154|||1924|||1 (distance: 0.0013)
+  getServiceTicketBase64|||1|||1611|||2 (distance: 0.0013)
+  minInclusive|||2|||3471|||2 (distance: 0.0022)
+  )|||1456|||1209|||6 (distance: 0.0028)
+
+Token: String|||43|||410|||2
+Closest neighbors:
+  search|||6|||3919|||3 (distance: 0.0013)
+  )|||5779|||4770|||5 (distance: 0.0014)
+  <|||168|||3830|||1 (distance: 0.0014)
+  .|||595|||524|||1 (distance: 0.0016)
+  (|||264|||210|||1 (distance: 0.0017)
+
+Token: JSONMapping|||58|||913|||4
+Closest neighbors:
+  =|||816|||4329|||2 (distance: 0.0008)
+  return|||182|||3184|||0 (distance: 0.0010)
+  ,|||1230|||4654|||13 (distance: 0.0021)
+  ,|||1247|||4732|||10 (distance: 0.0029)
+  Role|||3|||120|||2 (distance: 0.0030)
+
+Token: FileItemIterator|||1|||4630|||0
+Closest neighbors:
+  (|||4295|||3678|||9 (distance: 0.0003)
+  (|||4744|||4058|||9 (distance: 0.0003)
+  )|||2791|||2347|||7 (distance: 0.0008)
+  .|||4891|||4984|||6 (distance: 0.0019)
+  setTypeMetaData|||5|||2312|||2 (distance: 0.0021)
+
+Token: ]|||188|||4936|||6
+Closest neighbors:
+  )|||2523|||2114|||9 (distance: 0.0008)
+  .|||302|||250|||1 (distance: 0.0009)
+  private|||48|||3857|||1 (distance: 0.0012)
+  (|||5733|||4812|||5 (distance: 0.0014)
+  {|||1160|||4960|||6 (distance: 0.0018)
+
+Token: )|||158|||131|||9
+Closest neighbors:
+  {|||371|||2566|||10 (distance: 0.0013)
+  restrictions|||1|||3435|||6 (distance: 0.0026)
+  setTypeMetaData|||8|||2369|||2 (distance: 0.0032)
+  (|||4566|||3911|||4 (distance: 0.0061)
+  searchRequestBuilder|||6|||549|||0 (distance: 0.0070)
+
+Token: List|||39|||1187|||4
+Closest neighbors:
+  ;|||2390|||4996|||12 (distance: 0.0020)
+  returnBuffer|||18|||2735|||0 (distance: 0.0045)
+  format|||3|||3724|||6 (distance: 0.0055)
+  put|||68|||902|||2 (distance: 0.0066)
+  globalFieldUpdateValue|||1|||2501|||2 (distance: 0.0068)
+
+Token: (|||3117|||2712|||1
+Closest neighbors:
+  .|||3213|||3037|||1 (distance: 0.0015)
+  .|||3529|||3314|||9 (distance: 0.0017)
+  .|||1876|||1830|||1 (distance: 0.0020)
+  value|||14|||3583|||7 (distance: 0.0033)
+  (|||1490|||1288|||4 (distance: 0.0052)
+
+Token: this|||607|||2163|||2
+Closest neighbors:
+  )|||5476|||4525|||5 (distance: 0.0006)
+  =|||981|||4919|||2 (distance: 0.0014)
+  List|||30|||993|||0 (distance: 0.0015)
+  private|||77|||4528|||1 (distance: 0.0019)
+  <|||172|||3901|||3 (distance: 0.0023)
+
+Token: ;|||400|||909|||14
+Closest neighbors:
+  return|||328|||4937|||0 (distance: 0.0002)
+  Attachment|||7|||3327|||0 (distance: 0.0007)
+  existingPassword|||1|||31|||1 (distance: 0.0009)
+  ;|||2345|||4924|||9 (distance: 0.0020)
+  JSONObject|||60|||2188|||0 (distance: 0.0030)
+
+Token: (|||4817|||4127|||1
+Closest neighbors:
+  unLockFormContainer|||2|||976|||3 (distance: 0.0021)
+  .|||2516|||2348|||13 (distance: 0.0023)
+  ;|||1417|||3284|||7 (distance: 0.0039)
+  Long|||50|||1805|||0 (distance: 0.0040)
+  )|||3007|||2507|||8 (distance: 0.0054)
+
+Token: (|||4282|||3670|||6
+Closest neighbors:
+  DEFAULT_OFFSET|||3|||2546|||0 (distance: 0.0005)
+  this|||53|||157|||2 (distance: 0.0011)
+  ;|||1148|||2609|||13 (distance: 0.0014)
+  )|||3837|||3263|||8 (distance: 0.0016)
+  (|||1225|||1045|||6 (distance: 0.0021)
+
+Token: ;|||2051|||4464|||2
+Closest neighbors:
+  title|||2|||1055|||4 (distance: 0.0007)
+  (|||668|||498|||11 (distance: 0.0014)
+  (|||4168|||3591|||1 (distance: 0.0020)
+  (|||228|||184|||5 (distance: 0.0038)
+  if|||532|||2824|||0 (distance: 0.0042)
+
+Token: )|||1695|||1402|||1
+Closest neighbors:
+  setServiceTicket|||26|||1733|||2 (distance: 0.0001)
+  stepFactorParam|||4|||2298|||4 (distance: 0.0001)
+  getClientId|||1|||389|||4 (distance: 0.0002)
+  )|||1241|||1009|||1 (distance: 0.0013)
+  )|||3432|||2866|||15 (distance: 0.0023)
+
+Token: public|||159|||2005|||0
+Closest neighbors:
+  .|||4591|||4662|||8 (distance: 0.0003)
+  field|||42|||4272|||1 (distance: 0.0008)
+  ?|||99|||4535|||2 (distance: 0.0019)
+  )|||4872|||4064|||10 (distance: 0.0021)
+  (|||3793|||3318|||7 (distance: 0.0031)
+
+Token: (|||668|||498|||11
+Closest neighbors:
+  (|||4168|||3591|||1 (distance: 0.0005)
+  ;|||2051|||4464|||2 (distance: 0.0014)
+  title|||2|||1055|||4 (distance: 0.0021)
+  (|||228|||184|||5 (distance: 0.0024)
+  if|||532|||2824|||0 (distance: 0.0028)
+
+Token: .|||2866|||2642|||3
+Closest neighbors:
+  .|||4434|||4455|||6 (distance: 0.0000)
+  CloseReason|||1|||3087|||7 (distance: 0.0009)
+  ;|||2062|||4483|||6 (distance: 0.0047)
+  {|||954|||4400|||18 (distance: 0.0077)
+  )|||4535|||3785|||6 (distance: 0.0093)
+
+Token: )|||598|||425|||6
+Closest neighbors:
+  )|||1266|||1044|||10 (distance: 0.0002)
+  parent|||1|||3427|||4 (distance: 0.0005)
+  cn|||11|||3925|||5 (distance: 0.0012)
+  )|||218|||164|||6 (distance: 0.0021)
+  .|||4893|||4987|||1 (distance: 0.0027)
+
+Token: setId|||1|||70|||2
+Closest neighbors:
+  (|||436|||328|||3 (distance: 0.0002)
+  .|||2396|||2223|||5 (distance: 0.0005)
+  uncompressedJson|||3|||828|||8 (distance: 0.0007)
+  ;|||2140|||4609|||4 (distance: 0.0008)
+  &&|||69|||1907|||5 (distance: 0.0011)
+
+Token: ;|||580|||1332|||8
+Closest neighbors:
+  .|||3404|||3214|||5 (distance: 0.0000)
+  )|||1020|||797|||16 (distance: 0.0002)
+  private|||3|||1040|||1 (distance: 0.0003)
+  )|||3634|||3085|||13 (distance: 0.0007)
+  .|||225|||160|||5 (distance: 0.0007)
+
+Token: ,|||34|||140|||7
+Closest neighbors:
+  (|||2386|||2072|||3 (distance: 0.0014)
+  )|||109|||97|||2 (distance: 0.0021)
+  ,|||356|||1683|||7 (distance: 0.0023)
+  managedClass|||39|||4830|||4 (distance: 0.0033)
+  put|||213|||2457|||2 (distance: 0.0037)
+
+Token: ;|||61|||123|||16
+Closest neighbors:
+  interfaceMethod|||4|||4144|||4 (distance: 0.0013)
+  put|||83|||1231|||2 (distance: 0.0021)
+  (|||1201|||1011|||1 (distance: 0.0028)
+  latitudeAndLongitude|||13|||732|||5 (distance: 0.0039)
+  static|||33|||3586|||2 (distance: 0.0052)
+
+Token: .|||1079|||1077|||4
+Closest neighbors:
+  container|||1|||3986|||5 (distance: 0.0000)
+  .|||831|||810|||3 (distance: 0.0010)
+  .|||4685|||4768|||4 (distance: 0.0012)
+  [|||174|||4654|||3 (distance: 0.0021)
+  userToPost|||2|||88|||0 (distance: 0.0023)
+
+Token: accessToken|||1|||2810|||1
+Closest neighbors:
+  if|||153|||654|||0 (distance: 0.0008)
+  {|||896|||4230|||8 (distance: 0.0010)
+  formsToPopulateFormFieldsForParam|||6|||1471|||5 (distance: 0.0012)
+  configurationKeyParam|||2|||3285|||4 (distance: 0.0021)
+  (|||4816|||4126|||3 (distance: 0.0025)
+
+Token: (|||3423|||2971|||5
+Closest neighbors:
+  viewRuleSyntaxParam|||3|||1563|||1 (distance: 0.0006)
+  ;|||1821|||4037|||7 (distance: 0.0012)
+  returnVal|||215|||2459|||0 (distance: 0.0023)
+  MultiChoice|||27|||3230|||5 (distance: 0.0031)
+  ERROR_MESSAGE_OTHER|||1|||3116|||6 (distance: 0.0033)
+
+Token: bytesToConvert|||2|||2254|||2
+Closest neighbors:
+  null|||484|||2559|||4 (distance: 0.0004)
+  ;|||1595|||3631|||4 (distance: 0.0006)
+  public|||223|||2689|||1 (distance: 0.0008)
+  )|||223|||168|||6 (distance: 0.0016)
+  this|||100|||264|||4 (distance: 0.0037)
+
+Token: .|||2151|||2053|||9
+Closest neighbors:
+  {|||189|||1207|||5 (distance: 0.0006)
+  )|||3745|||3185|||7 (distance: 0.0011)
+  .|||3064|||2845|||5 (distance: 0.0014)
+  )|||208|||158|||6 (distance: 0.0017)
+  {|||931|||4319|||12 (distance: 0.0030)
+
+Token: factory|||2|||4877|||3
+Closest neighbors:
+  .|||2674|||2465|||3 (distance: 0.0012)
+  document|||1|||4661|||2 (distance: 0.0026)
+  XsdRestriction|||9|||3493|||5 (distance: 0.0028)
+  (|||5480|||4621|||6 (distance: 0.0030)
+  systemProperty|||6|||3698|||2 (distance: 0.0041)
+
+Token: (|||835|||655|||11
+Closest neighbors:
+  !=|||414|||4870|||5 (distance: 0.0008)
+  addAllTableRecordsForReturnParam|||1|||604|||1 (distance: 0.0015)
+  getAttachments|||1|||1300|||4 (distance: 0.0024)
+  .|||2876|||2650|||7 (distance: 0.0033)
+  put|||87|||1239|||2 (distance: 0.0056)
+
+Token: new|||55|||687|||1
+Closest neighbors:
+  getValueObj|||3|||1196|||0 (distance: 0.0008)
+  (|||4239|||3642|||5 (distance: 0.0013)
+  (|||1374|||1178|||1 (distance: 0.0015)
+  ;|||657|||1529|||11 (distance: 0.0022)
+  Long|||7|||216|||4 (distance: 0.0022)
+
+Token: if|||516|||2770|||0
+Closest neighbors:
+  ,|||759|||3259|||1 (distance: 0.0002)
+  .|||397|||356|||4 (distance: 0.0012)
+  (|||1647|||1420|||10 (distance: 0.0046)
+  )|||857|||649|||9 (distance: 0.0046)
+  null|||536|||2862|||4 (distance: 0.0056)
+
+Token: null|||584|||3146|||7
+Closest neighbors:
+  {|||1174|||4995|||14 (distance: 0.0003)
+  }|||425|||4036|||0 (distance: 0.0004)
+  (|||2467|||2144|||1 (distance: 0.0022)
+  put|||195|||2209|||2 (distance: 0.0023)
+  =|||340|||1998|||2 (distance: 0.0045)
+
+Token: classDescriptor|||6|||4460|||3
+Closest neighbors:
+  if|||835|||4314|||0 (distance: 0.0008)
+  (|||3097|||2692|||3 (distance: 0.0011)
+  (|||4058|||3510|||1 (distance: 0.0033)
+  (|||2234|||1984|||3 (distance: 0.0035)
+  if|||486|||2566|||0 (distance: 0.0037)
+
+Token: )|||4982|||4162|||12
+Closest neighbors:
+  .|||2947|||2739|||5 (distance: 0.0035)
+  ;|||396|||900|||14 (distance: 0.0037)
+  .|||1215|||1217|||5 (distance: 0.0051)
+  {|||50|||339|||8 (distance: 0.0055)
+  get|||16|||2237|||17 (distance: 0.0075)
+
+Token: Role|||3|||120|||2
+Closest neighbors:
+  return|||200|||3515|||0 (distance: 0.0000)
+  ,|||1247|||4732|||10 (distance: 0.0001)
+  ,|||1230|||4654|||13 (distance: 0.0009)
+  JSONMapping|||58|||913|||4 (distance: 0.0030)
+  )|||3733|||3174|||10 (distance: 0.0031)
+
+Token: this|||264|||918|||6
+Closest neighbors:
+  context|||27|||4793|||2 (distance: 0.0001)
+  ;|||2378|||4976|||21 (distance: 0.0003)
+  User|||8|||17|||6 (distance: 0.0006)
+  typeParam|||2|||241|||2 (distance: 0.0014)
+  :|||128|||3204|||4 (distance: 0.0019)
+
+Token: int|||66|||4041|||0
+Closest neighbors:
+  {|||989|||4481|||11 (distance: 0.0000)
+  )|||3262|||2737|||6 (distance: 0.0000)
+  )|||3670|||3116|||12 (distance: 0.0002)
+  formContainerIds|||3|||1853|||2 (distance: 0.0005)
+  adminUserCreate|||1|||2767|||1 (distance: 0.0012)
+
+Token: getMachineName|||1|||3292|||4
+Closest neighbors:
+  getFieldValue|||26|||2320|||4 (distance: 0.0007)
+  )|||1678|||1376|||4 (distance: 0.0017)
+  =|||168|||997|||2 (distance: 0.0017)
+  static|||71|||4786|||2 (distance: 0.0023)
+  electronicFormIdParam|||13|||2816|||6 (distance: 0.0051)
+
+Token: (|||781|||622|||1
+Closest neighbors:
+  (|||3208|||2777|||11 (distance: 0.0002)
+  (|||3573|||3125|||3 (distance: 0.0003)
+  {|||649|||3641|||14 (distance: 0.0010)
+  (|||5229|||4431|||1 (distance: 0.0015)
+  JSONMapping|||11|||148|||4 (distance: 0.0033)
+
+Token: ;|||1295|||2988|||2
+Closest neighbors:
+  AuthEncryptedData|||3|||1638|||2 (distance: 0.0013)
+  public|||293|||3550|||1 (distance: 0.0029)
+  .|||101|||80|||5 (distance: 0.0032)
+  <|||242|||4377|||13 (distance: 0.0033)
+  path|||4|||3654|||5 (distance: 0.0035)
+
+Token: .|||1024|||1004|||1
+Closest neighbors:
+  )|||2059|||1737|||6 (distance: 0.0000)
+  type|||31|||4655|||8 (distance: 0.0013)
+  >|||234|||4289|||9 (distance: 0.0018)
+  )|||4157|||3499|||13 (distance: 0.0021)
+  getInstance|||16|||4537|||2 (distance: 0.0033)
+
+Token: throws|||17|||3700|||7
+Closest neighbors:
+  ,|||342|||1635|||1 (distance: 0.0000)
+  WS|||109|||2650|||0 (distance: 0.0002)
+  .|||4275|||4263|||7 (distance: 0.0015)
+  )|||3289|||2761|||5 (distance: 0.0020)
+  {|||285|||1967|||10 (distance: 0.0021)
+
+Token: method|||28|||4255|||7
+Closest neighbors:
+  flowNameParam|||5|||2489|||6 (distance: 0.0025)
+  (|||2984|||2586|||1 (distance: 0.0026)
+  GetIndexResponse|||2|||2444|||2 (distance: 0.0026)
+  )|||2124|||1814|||7 (distance: 0.0034)
+  .|||2661|||2457|||9 (distance: 0.0044)
+
+Token: )|||2012|||1688|||10
+Closest neighbors:
+  if|||545|||2873|||0 (distance: 0.0009)
+  <|||222|||4263|||1 (distance: 0.0017)
+  (|||1667|||1443|||6 (distance: 0.0019)
+  formFieldMappingParam|||11|||1886|||0 (distance: 0.0035)
+  >|||154|||3485|||3 (distance: 0.0062)
+
+Token: ;|||1421|||3291|||15
+Closest neighbors:
+  indexParam|||11|||2445|||6 (distance: 0.0009)
+  .|||4340|||4347|||9 (distance: 0.0022)
+  )|||740|||540|||6 (distance: 0.0024)
+  arg1|||4|||3735|||8 (distance: 0.0028)
+  nameParam|||5|||409|||11 (distance: 0.0030)
+
+Token: JSONMapping|||20|||188|||4
+Closest neighbors:
+  catch|||28|||2697|||1 (distance: 0.0024)
+  config|||9|||4058|||6 (distance: 0.0028)
+  ]|||34|||1416|||11 (distance: 0.0029)
+  private|||50|||3870|||1 (distance: 0.0032)
+  (|||650|||480|||7 (distance: 0.0044)
+
+Token: boolean|||24|||1029|||0
+Closest neighbors:
+  )|||2626|||2197|||8 (distance: 0.0001)
+  serviceTicket|||98|||3328|||6 (distance: 0.0002)
+  null|||191|||997|||3 (distance: 0.0011)
+  RoleListing|||3|||1917|||4 (distance: 0.0014)
+  ;|||742|||1716|||6 (distance: 0.0027)
+
+Token: ;|||2325|||4895|||21
+Closest neighbors:
+  .|||992|||955|||9 (distance: 0.0002)
+  (|||2677|||2317|||3 (distance: 0.0007)
+  ;|||536|||1236|||6 (distance: 0.0012)
+  String|||183|||2277|||3 (distance: 0.0017)
+  utilGlobal|||2|||307|||3 (distance: 0.0019)
+
+Token: ==|||62|||768|||3
+Closest neighbors:
+  (|||2018|||1782|||3 (distance: 0.0022)
+  FlowStepListing|||1|||499|||2 (distance: 0.0029)
+  index|||22|||1416|||2 (distance: 0.0046)
+  ;|||1313|||3030|||8 (distance: 0.0056)
+  .|||2897|||2691|||4 (distance: 0.0067)
+
+Token: flowStepRule|||9|||1591|||0
+Closest neighbors:
+  if|||438|||2249|||0 (distance: 0.0002)
+  )|||3102|||2594|||6 (distance: 0.0002)
+  public|||94|||956|||1 (distance: 0.0006)
+  .|||4891|||4984|||6 (distance: 0.0026)
+  )|||5337|||4425|||5 (distance: 0.0036)
+
+Token: ,|||158|||878|||7
+Closest neighbors:
+  Field|||178|||4269|||9 (distance: 0.0008)
+  ;|||1653|||3757|||10 (distance: 0.0019)
+  }|||219|||2696|||0 (distance: 0.0022)
+  public|||232|||2816|||1 (distance: 0.0029)
+  cnIdx|||3|||3926|||11 (distance: 0.0031)
+
+Token: .|||2995|||2783|||5
+Closest neighbors:
+  logContext|||3|||4750|||0 (distance: 0.0011)
+  SQLUtilWebSocketGetAncestorClient|||1|||1386|||5 (distance: 0.0017)
+  void|||48|||3688|||1 (distance: 0.0025)
+  null|||769|||4595|||4 (distance: 0.0027)
+  null|||29|||152|||8 (distance: 0.0031)
+
+Token: .|||2934|||2732|||6
+Closest neighbors:
+  .|||1360|||1337|||9 (distance: 0.0017)
+  (|||814|||644|||1 (distance: 0.0028)
+  implementationModifiers|||1|||4158|||1 (distance: 0.0039)
+  ;|||2171|||4653|||9 (distance: 0.0039)
+  <|||273|||4532|||1 (distance: 0.0040)
+
+Token: cn|||11|||3925|||5
+Closest neighbors:
+  parent|||1|||3427|||4 (distance: 0.0007)
+  )|||218|||164|||6 (distance: 0.0009)
+  )|||598|||425|||6 (distance: 0.0012)
+  )|||1266|||1044|||10 (distance: 0.0014)
+  .|||4893|||4987|||1 (distance: 0.0015)
+
+Token: t|||7|||3754|||9
+Closest neighbors:
+  )|||1509|||1249|||7 (distance: 0.0006)
+  return|||126|||2049|||0 (distance: 0.0010)
+  &&|||153|||4400|||11 (distance: 0.0013)
+  )|||4490|||3737|||9 (distance: 0.0016)
+  .|||1426|||1392|||5 (distance: 0.0029)
+
+Token: (|||2841|||2460|||1
+Closest neighbors:
+  ,|||124|||648|||7 (distance: 0.0001)
+  )|||1429|||1175|||5 (distance: 0.0015)
+  )|||1239|||1006|||6 (distance: 0.0015)
+  .|||1|||0|||1 (distance: 0.0017)
+  }|||354|||3595|||0 (distance: 0.0020)
+
+Token: (|||4926|||4211|||8
+Closest neighbors:
+  )|||1712|||1428|||5 (distance: 0.0005)
+  (|||4023|||3496|||1 (distance: 0.0010)
+  instanceScope|||6|||4440|||2 (distance: 0.0017)
+  getRoles|||2|||118|||12 (distance: 0.0019)
+  )|||4852|||4049|||19 (distance: 0.0019)
+
+Token: (|||1204|||1014|||3
+Closest neighbors:
+  )|||526|||386|||4 (distance: 0.0009)
+  FormFieldListing|||1|||695|||0 (distance: 0.0015)
+  driverClassName|||1|||3935|||11 (distance: 0.0037)
+  =|||101|||612|||5 (distance: 0.0074)
+  event|||3|||4725|||1 (distance: 0.0076)
+
+Token: {|||50|||339|||8
+Closest neighbors:
+  .|||2947|||2739|||5 (distance: 0.0020)
+  ;|||999|||2285|||10 (distance: 0.0036)
+  )|||4982|||4162|||12 (distance: 0.0055)
+  )|||2802|||2356|||5 (distance: 0.0088)
+  ;|||396|||900|||14 (distance: 0.0091)
+
+Token: .|||659|||617|||7
+Closest neighbors:
+  this|||19|||110|||3 (distance: 0.0001)
+  )|||1776|||1503|||9 (distance: 0.0004)
+  [|||24|||761|||7 (distance: 0.0007)
+  formsToFetchForLocalCacheArr|||2|||1462|||9 (distance: 0.0016)
+  )|||915|||711|||4 (distance: 0.0017)
+
+Token: .|||813|||789|||1
+Closest neighbors:
+  int|||13|||1289|||3 (distance: 0.0004)
+  .|||4139|||4091|||8 (distance: 0.0008)
+  !=|||252|||2462|||7 (distance: 0.0015)
+  if|||125|||526|||0 (distance: 0.0022)
+  (|||1938|||1690|||3 (distance: 0.0028)
+
+Token: formFieldMappingParam|||11|||1886|||0
+Closest neighbors:
+  <|||222|||4263|||1 (distance: 0.0019)
+  >|||154|||3485|||3 (distance: 0.0027)
+  if|||756|||4074|||0 (distance: 0.0033)
+  )|||2012|||1688|||10 (distance: 0.0035)
+  {|||307|||2036|||9 (distance: 0.0037)
+
+Token: .|||1004|||972|||3
+Closest neighbors:
+  key|||8|||3989|||4 (distance: 0.0012)
+  longValue|||15|||1525|||12 (distance: 0.0012)
+  )|||3735|||3175|||9 (distance: 0.0014)
+  .|||723|||676|||7 (distance: 0.0017)
+  .|||4596|||4672|||3 (distance: 0.0018)
+
+Token: (|||4703|||4017|||3
+Closest neighbors:
+  null|||539|||2871|||4 (distance: 0.0037)
+  null|||92|||477|||3 (distance: 0.0046)
+  )|||3070|||2576|||8 (distance: 0.0048)
+  public|||108|||1154|||1 (distance: 0.0050)
+  )|||949|||740|||9 (distance: 0.0050)
+
+Token: httpRequest|||3|||3968|||8
+Closest neighbors:
+  this|||257|||908|||2 (distance: 0.0009)
+  User|||61|||2130|||4 (distance: 0.0024)
+  ,|||157|||878|||5 (distance: 0.0037)
+  =|||179|||1047|||2 (distance: 0.0040)
+  (|||4746|||4059|||6 (distance: 0.0040)
+
+Token: loadTrustMaterial|||2|||3011|||2
+Closest neighbors:
+  UserNotification|||14|||2622|||2 (distance: 0.0002)
+  (|||2049|||1814|||6 (distance: 0.0008)
+  stream|||6|||3553|||2 (distance: 0.0023)
+  FieldMetaData|||10|||2312|||4 (distance: 0.0032)
+  formTypeJsonObj|||1|||2101|||1 (distance: 0.0037)
+
+Token: )|||5884|||4837|||10
+Closest neighbors:
+  (|||1397|||1206|||3 (distance: 0.0002)
+  <|||273|||4532|||1 (distance: 0.0007)
+  implementationModifiers|||1|||4158|||1 (distance: 0.0008)
+  isEmpty|||99|||2584|||17 (distance: 0.0016)
+  .|||1360|||1337|||9 (distance: 0.0030)
+
+Token: )|||4372|||3646|||12
+Closest neighbors:
+  objWithKey|||2|||1165|||0 (distance: 0.0019)
+  .|||1429|||1395|||3 (distance: 0.0030)
+  targetType|||2|||3642|||2 (distance: 0.0036)
+  (|||5648|||4758|||1 (distance: 0.0054)
+  node|||14|||4267|||0 (distance: 0.0054)
+
+Token: .|||1715|||1674|||3
+Closest neighbors:
+  DateTime|||7|||3234|||8 (distance: 0.0002)
+  getIdentities|||2|||1327|||12 (distance: 0.0020)
+  "\r\n"|||1|||3891|||17 (distance: 0.0027)
+  )|||860|||651|||6 (distance: 0.0031)
+  (|||4440|||3806|||4 (distance: 0.0034)
+
+Token: .|||3529|||3314|||9
+Closest neighbors:
+  .|||1876|||1830|||1 (distance: 0.0004)
+  value|||14|||3583|||7 (distance: 0.0016)
+  (|||3117|||2712|||1 (distance: 0.0017)
+  .|||3213|||3037|||1 (distance: 0.0032)
+  (|||2053|||1820|||10 (distance: 0.0060)
+
+Token: format|||3|||3724|||6
+Closest neighbors:
+  put|||68|||902|||2 (distance: 0.0011)
+  if|||711|||3850|||0 (distance: 0.0017)
+  bytesToPoisonParam|||2|||2676|||2 (distance: 0.0024)
+  getLocalizedMessage|||2|||4882|||8 (distance: 0.0026)
+  ;|||2390|||4996|||12 (distance: 0.0036)
+
+Token: )|||1902|||1591|||12
+Closest neighbors:
+  (|||3478|||3029|||1 (distance: 0.0005)
+  fieldMapping|||1|||1788|||3 (distance: 0.0009)
+  (|||5741|||4817|||18 (distance: 0.0014)
+  formFieldsParam|||3|||606|||2 (distance: 0.0019)
+  >|||208|||4211|||6 (distance: 0.0022)
+
+Token: "existing"|||1|||38|||4
+Closest neighbors:
+  {|||165|||984|||3 (distance: 0.0012)
+  .|||762|||723|||3 (distance: 0.0016)
+  {|||492|||3089|||8 (distance: 0.0017)
+  .|||2226|||2106|||1 (distance: 0.0017)
+  requiresImplementation|||1|||4153|||4 (distance: 0.0020)
+
+Token: null|||294|||1662|||8
+Closest neighbors:
+  (|||2085|||1859|||10 (distance: 0.0000)
+  next|||2|||1006|||4 (distance: 0.0007)
+  SyntaxFactory|||5|||3153|||2 (distance: 0.0016)
+  )|||4319|||3607|||10 (distance: 0.0019)
+  =|||12|||102|||2 (distance: 0.0021)
+
+Token: )|||3149|||2633|||1
+Closest neighbors:
+  (|||908|||734|||9 (distance: 0.0003)
+  (|||4056|||3507|||17 (distance: 0.0005)
+  (|||3010|||2600|||4 (distance: 0.0014)
+  NULL|||4|||1312|||2 (distance: 0.0023)
+  System|||16|||3876|||0 (distance: 0.0024)
+
+Token: userToGetInfoFor|||7|||68|||0
+Closest neighbors:
+  multiChoice|||9|||1182|||1 (distance: 0.0028)
+  (|||775|||613|||9 (distance: 0.0034)
+  (|||3451|||3000|||1 (distance: 0.0036)
+  (|||1763|||1525|||6 (distance: 0.0039)
+  )|||2963|||2477|||7 (distance: 0.0047)
+
+Token: o1Value|||4|||3431|||1
+Closest neighbors:
+  return|||270|||4198|||0 (distance: 0.0016)
+  toLowerCase|||20|||3186|||7 (distance: 0.0018)
+  {|||909|||4260|||14 (distance: 0.0018)
+  publicType|||2|||4106|||2 (distance: 0.0021)
+  =|||146|||828|||1 (distance: 0.0037)
+
+Token: String|||219|||2766|||5
+Closest neighbors:
+  public|||206|||2502|||1 (distance: 0.0013)
+  >|||155|||3486|||3 (distance: 0.0017)
+  )|||4840|||4037|||6 (distance: 0.0025)
+  ^|||1|||2679|||11 (distance: 0.0027)
+  (|||3799|||3323|||11 (distance: 0.0041)
+
+Token: String|||183|||2277|||3
+Closest neighbors:
+  utilGlobal|||2|||307|||3 (distance: 0.0002)
+  ;|||536|||1236|||6 (distance: 0.0004)
+  protected|||2|||865|||1 (distance: 0.0008)
+  .|||992|||955|||9 (distance: 0.0015)
+  ;|||2325|||4895|||21 (distance: 0.0017)
+
+Token: (|||2416|||2091|||3
+Closest neighbors:
+  .|||152|||122|||5 (distance: 0.0012)
+  (|||1040|||843|||3 (distance: 0.0019)
+  getServiceTicket|||3|||1513|||4 (distance: 0.0038)
+  (|||2515|||2172|||6 (distance: 0.0041)
+  putIfAbsent|||1|||3722|||5 (distance: 0.0041)
+
+Token: getLoggedInDateTime|||2|||144|||6
+Closest neighbors:
+  .|||2894|||2686|||8 (distance: 0.0003)
+  put|||165|||2106|||2 (distance: 0.0004)
+  )|||5858|||4821|||10 (distance: 0.0005)
+  Field|||159|||3254|||0 (distance: 0.0007)
+  )|||4854|||4049|||23 (distance: 0.0011)
+
+Token: (|||74|||83|||1
+Closest neighbors:
+  (|||5310|||4481|||8 (distance: 0.0004)
+  ;|||2032|||4427|||9 (distance: 0.0008)
+  ]|||83|||2672|||5 (distance: 0.0017)
+  ,|||327|||1596|||5 (distance: 0.0018)
+  (|||2477|||2153|||5 (distance: 0.0019)
+
+Token: ;|||2001|||4363|||8
+Closest neighbors:
+  (|||5874|||4906|||3 (distance: 0.0007)
+  }|||167|||2306|||0 (distance: 0.0011)
+  null|||195|||1030|||3 (distance: 0.0016)
+  fl|||4|||3778|||1 (distance: 0.0016)
+  (|||5870|||4903|||5 (distance: 0.0017)
+
+Token: .|||4303|||4290|||16
+Closest neighbors:
+  return|||246|||3869|||0 (distance: 0.0012)
+  ;|||1759|||3938|||17 (distance: 0.0018)
+  {|||1104|||4811|||15 (distance: 0.0022)
+  formsToFetchForLocalCacheArr|||7|||1476|||0 (distance: 0.0024)
+  longValue|||4|||217|||4 (distance: 0.0027)
+
+Token: null|||25|||142|||8
+Closest neighbors:
+  &&|||67|||1797|||9 (distance: 0.0003)
+  )|||3389|||2828|||6 (distance: 0.0023)
+  )|||5428|||4485|||9 (distance: 0.0040)
+  (|||650|||480|||7 (distance: 0.0051)
+  ]|||34|||1416|||11 (distance: 0.0066)
+
+Token: serviceTicket|||51|||1755|||6
+Closest neighbors:
+  file|||5|||3931|||1 (distance: 0.0005)
+  (|||3695|||3239|||3 (distance: 0.0008)
+  type|||22|||4279|||6 (distance: 0.0016)
+  multiChoice|||2|||290|||2 (distance: 0.0022)
+  null|||112|||594|||6 (distance: 0.0024)
+
+Token: WS|||39|||934|||2
+Closest neighbors:
+  (|||5301|||4476|||17 (distance: 0.0005)
+  }|||335|||3449|||0 (distance: 0.0011)
+  )|||2018|||1692|||10 (distance: 0.0013)
+  if|||399|||2052|||0 (distance: 0.0016)
+  .|||1597|||1568|||5 (distance: 0.0032)
+
+Token: JSONObject|||60|||2188|||0
+Closest neighbors:
+  (|||2284|||2018|||9 (distance: 0.0015)
+  Attachment|||7|||3327|||0 (distance: 0.0023)
+  ;|||400|||909|||14 (distance: 0.0030)
+  return|||328|||4937|||0 (distance: 0.0033)
+  .|||1803|||1749|||2 (distance: 0.0038)
+
+Token: setValue|||2|||4262|||3
+Closest neighbors:
+  isEmpty|||33|||628|||12 (distance: 0.0017)
+  )|||5607|||4637|||5 (distance: 0.0027)
+  )|||5612|||4642|||5 (distance: 0.0039)
+  =|||648|||3829|||7 (distance: 0.0059)
+  .|||126|||100|||7 (distance: 0.0080)
+
+Token: .|||212|||153|||9
+Closest neighbors:
+  (|||3301|||2847|||7 (distance: 0.0001)
+  managedClass|||48|||4974|||7 (distance: 0.0003)
+  destroy|||1|||3656|||2 (distance: 0.0014)
+  UtilGlobal|||25|||1710|||3 (distance: 0.0017)
+  =|||382|||2260|||8 (distance: 0.0022)
+
+Token: getDeclaredConstructors|||1|||4200|||18
+Closest neighbors:
+  )|||391|||276|||7 (distance: 0.0015)
+  ;|||383|||875|||8 (distance: 0.0025)
+  configurationKeyParam|||2|||3285|||4 (distance: 0.0030)
+  getInstance|||8|||3878|||5 (distance: 0.0037)
+  formsToPopulateFormFieldsForParam|||6|||1471|||5 (distance: 0.0039)
+
+Token: (|||3652|||3200|||3
+Closest neighbors:
+  }|||398|||3819|||0 (distance: 0.0001)
+  getEcho|||10|||2717|||6 (distance: 0.0027)
+  ABaseFluidJSONObject|||6|||2551|||0 (distance: 0.0036)
+  FormFlowHistoricData|||1|||943|||4 (distance: 0.0041)
+  )|||5866|||4827|||7 (distance: 0.0057)
+
+Token: )|||3389|||2828|||6
+Closest neighbors:
+  null|||25|||142|||8 (distance: 0.0023)
+  &&|||67|||1797|||9 (distance: 0.0026)
+  (|||650|||480|||7 (distance: 0.0028)
+  ]|||34|||1416|||11 (distance: 0.0043)
+  )|||5428|||4485|||9 (distance: 0.0063)
+
+Token: longValue|||11|||1061|||2
+Closest neighbors:
+  )|||15|||14|||13 (distance: 0.0010)
+  numberOfSentForms|||1|||1250|||1 (distance: 0.0036)
+  )|||854|||648|||12 (distance: 0.0052)
+  LinkHeader|||1|||4833|||5 (distance: 0.0061)
+  (|||5506|||4647|||10 (distance: 0.0074)
+
+Token: )|||532|||389|||9
+Closest neighbors:
+  interfaceName|||5|||4180|||11 (distance: 0.0002)
+  Version1|||29|||505|||8 (distance: 0.0004)
+  )|||5963|||4892|||5 (distance: 0.0006)
+  {|||374|||2654|||11 (distance: 0.0020)
+  (|||4369|||3738|||4 (distance: 0.0029)
+
+Token: =|||815|||4316|||1
+Closest neighbors:
+  Character|||10|||3831|||2 (distance: 0.0007)
+  throw|||16|||3043|||0 (distance: 0.0009)
+  .|||2904|||2702|||1 (distance: 0.0010)
+  &&|||50|||1240|||9 (distance: 0.0017)
+  =|||431|||2565|||7 (distance: 0.0022)
+
+Token: )|||2571|||2162|||13
+Closest neighbors:
+  .|||1881|||1833|||1 (distance: 0.0023)
+  {|||677|||3717|||8 (distance: 0.0023)
+  ;|||942|||2146|||8 (distance: 0.0027)
+  json|||7|||4957|||1 (distance: 0.0030)
+  )|||4949|||4139|||3 (distance: 0.0038)
+
+== Embedding Space Statistics ==
+Embedding dimension: 2
+Mean norm: 0.6812
+
+== Most Central Tokens (closest to origin) ==
+  simpleType|||4|||3529|||2 (norm: 0.6812)
+  passwordParam|||11|||2686|||7 (norm: 0.6812)
+  .|||2174|||2069|||1 (norm: 0.6812)
+  =|||804|||4266|||4 (norm: 0.6812)
+  .|||3523|||3313|||3 (norm: 0.6812)
+  (|||5002|||4266|||1 (norm: 0.6812)
+  for|||104|||4266|||0 (norm: 0.6812)
+  CURRENT_USER|||1|||2068|||2 (norm: 0.6812)
+  .|||911|||898|||5 (norm: 0.6812)
+  ==|||260|||3313|||7 (norm: 0.6812)
+  this|||247|||898|||8 (norm: 0.6812)
+  getEncryptedDataBase64|||2|||898|||10 (norm: 0.6812)
+  )|||1129|||898|||13 (norm: 0.6812)
+  node|||13|||4265|||1 (norm: 0.6812)
+  1|||60|||4264|||9 (norm: 0.6812)
+  )|||3903|||3313|||14 (norm: 0.6812)
+  if|||624|||3313|||0 (norm: 0.6812)
+  (|||5000|||4264|||6 (norm: 0.6812)
+  (|||1094|||897|||5 (norm: 0.6812)
+  )|||2465|||2069|||4 (norm: 0.6812)
+
+== Most Peripheral Tokens (farthest from origin) ==
+  .|||2781|||2576|||1 (norm: 0.6812)
+  generateSeed|||1|||2657|||8 (norm: 0.6812)
+  equals|||51|||4301|||5 (norm: 0.6812)
+  getDateAsLongFromJson|||10|||3306|||2 (norm: 0.6812)
+  .|||4316|||4302|||2 (norm: 0.6812)
+  this|||584|||2075|||0 (norm: 0.6812)
+  .|||4315|||4301|||8 (norm: 0.6812)
+  )|||1075|||846|||8 (norm: 0.6812)
+  this|||237|||847|||0 (norm: 0.6812)
+  ,|||1111|||4304|||15 (norm: 0.6812)
+  (|||3771|||3307|||1 (norm: 0.6812)
+  .|||3518|||3307|||3 (norm: 0.6812)
+  getDateValidTo|||1|||3307|||4 (norm: 0.6812)
+  )|||5172|||4300|||10 (norm: 0.6812)
+  .|||2179|||2073|||3 (norm: 0.6812)
+  !=|||327|||3307|||7 (norm: 0.6812)
+  (|||1042|||845|||1 (norm: 0.6812)
+  )|||2474|||2075|||4 (norm: 0.6812)
+  (|||1041|||844|||4 (norm: 0.6812)
+  addExpectedMessage|||1|||844|||3 (norm: 0.6812)
